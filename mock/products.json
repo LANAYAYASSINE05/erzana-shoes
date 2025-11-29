@@ -1,0 +1,265 @@
+{
+  "products": [
+    {
+      "title": "Bottine Cuir Premium Homme – Noir",
+      "handle": "bottine-cuir-premium-homme-noir",
+      "vendor": "Erzana Homme",
+      "type": "Chaussures",
+      "tags": ["bottes-bottines", "haute_gamme", "nouveaute"],
+      "price": 649,
+      "compare_at_price": 849,
+      "collection": "Bottes & Bottines",
+      "description": "Bottine élégante en cuir véritable, confectionnée avec un savoir-faire artisanal exceptionnel. Design minimaliste et raffiné, parfaite pour un style homme moderne et sophistiqué. Semelle intérieure en cuir pour un confort optimal toute la journée. Idéale pour les occasions formelles et décontractées, cette bottine allie élégance intemporelle et qualité premium.",
+      "variants": [
+        {"size": 40, "color": "Noir"},
+        {"size": 41, "color": "Noir"},
+        {"size": 42, "color": "Noir"},
+        {"size": 43, "color": "Noir"},
+        {"size": 44, "color": "Noir"}
+      ],
+      "image": "https://via.placeholder.com/1200x1500/231f20/ffffff?text=Bottine+Premium+Noir"
+    },
+    {
+      "title": "Bottine Heritage Classique – Blanc",
+      "handle": "bottine-heritage-classique-blanc",
+      "vendor": "Erzana Homme",
+      "type": "Chaussures",
+      "tags": ["bottes-bottines", "tendance"],
+      "price": 699,
+      "compare_at_price": 899,
+      "collection": "Bottes & Bottines",
+      "description": "Bottine classique en cuir blanc premium, inspirée des modèles traditionnels revisités avec une touche contemporaine. Finitions impeccables et doublure en cuir souple pour un confort exceptionnel. Un must-have pour l'homme moderne qui apprécie l'élégance intemporelle et la qualité supérieure.",
+      "variants": [
+        {"size": 40, "color": "Blanc"},
+        {"size": 41, "color": "Blanc"},
+        {"size": 42, "color": "Blanc"},
+        {"size": 43, "color": "Blanc"},
+        {"size": 44, "color": "Blanc"}
+      ],
+      "image": "https://via.placeholder.com/1200x1500/ffffff/231f20?text=Bottine+Heritage+Blanc"
+    },
+    {
+      "title": "Derby Minimaliste Classique – Noir",
+      "handle": "derby-minimaliste-classique-noir",
+      "vendor": "Erzana Homme",
+      "type": "Chaussures",
+      "tags": ["chaussures-de-ville", "haute_gamme"],
+      "price": 599,
+      "compare_at_price": 799,
+      "collection": "Chaussures de Ville",
+      "description": "Derby élégant en cuir noir premium, design minimaliste et raffiné. Parfait pour un style professionnel et sophistiqué. Semelle en cuir avec renfort en caoutchouc pour une meilleure adhérence. Confortable et durable, cette chaussure de ville allie tradition et modernité pour l'homme exigeant.",
+      "variants": [
+        {"size": 40, "color": "Noir"},
+        {"size": 41, "color": "Noir"},
+        {"size": 42, "color": "Noir"},
+        {"size": 43, "color": "Noir"},
+        {"size": 44, "color": "Noir"}
+      ],
+      "image": "https://via.placeholder.com/1200x1500/231f20/ffffff?text=Derby+Minimaliste+Noir"
+    },
+    {
+      "title": "Richelieu Heritage Classique – Noir",
+      "handle": "richelieu-heritage-classique-noir",
+      "vendor": "Erzana Homme",
+      "type": "Chaussures",
+      "tags": ["chaussures-de-ville", "haute_gamme", "tendance"],
+      "price": 749,
+      "compare_at_price": 949,
+      "collection": "Chaussures de Ville",
+      "description": "Richelieu en cuir noir premium, confectionné selon les standards de la maroquinerie de luxe. Design classique intemporel, parfait pour les occasions formelles et professionnelles. Doublure en cuir souple et semelle intérieure confortable pour un port agréable toute la journée.",
+      "variants": [
+        {"size": 40, "color": "Noir"},
+        {"size": 41, "color": "Noir"},
+        {"size": 42, "color": "Noir"},
+        {"size": 43, "color": "Noir"},
+        {"size": 44, "color": "Noir"}
+      ],
+      "image": "https://via.placeholder.com/1200x1500/231f20/ffffff?text=Richelieu+Heritage+Noir"
+    },
+    {
+      "title": "Basket Confort+ Ultra-Légère – Noir",
+      "handle": "basket-confort-ultra-legere-noir",
+      "vendor": "Erzana Homme",
+      "type": "Chaussures",
+      "tags": ["baskets-espadrilles", "confort", "nouveaute"],
+      "price": 549,
+      "compare_at_price": 749,
+      "collection": "Baskets & Espadrilles",
+      "description": "Basket premium ultra-légère en cuir noir, alliant confort exceptionnel et style moderne. Semelle amortissante pour un confort optimal lors de longues journées. Design épuré et minimaliste, parfaite pour un style décontracté élégant. Matériaux de qualité supérieure pour une durabilité maximale.",
+      "variants": [
+        {"size": 40, "color": "Noir"},
+        {"size": 41, "color": "Noir"},
+        {"size": 42, "color": "Noir"},
+        {"size": 43, "color": "Noir"},
+        {"size": 44, "color": "Noir"}
+      ],
+      "image": "https://via.placeholder.com/1200x1500/231f20/ffffff?text=Basket+Confort+Noir"
+    },
+    {
+      "title": "Espadrille Premium Minimaliste – Blanc",
+      "handle": "espadrille-premium-minimaliste-blanc",
+      "vendor": "Erzana Homme",
+      "type": "Chaussures",
+      "tags": ["baskets-espadrilles", "tendance"],
+      "price": 449,
+      "compare_at_price": 649,
+      "collection": "Baskets & Espadrilles",
+      "description": "Espadrille élégante en toile premium blanche, semelle en jute traditionnelle. Design minimaliste et raffiné, parfaite pour un style décontracté sophistiqué. Légère et confortable, idéale pour les beaux jours. Finitions soignées et matériaux de qualité pour une durabilité optimale.",
+      "variants": [
+        {"size": 40, "color": "Blanc"},
+        {"size": 41, "color": "Blanc"},
+        {"size": 42, "color": "Blanc"},
+        {"size": 43, "color": "Blanc"},
+        {"size": 44, "color": "Blanc"}
+      ],
+      "image": "https://via.placeholder.com/1200x1500/ffffff/231f20?text=Espadrille+Premium+Blanc"
+    },
+    {
+      "title": "Chaussure Confort+ Premium – Noir",
+      "handle": "chaussure-confort-premium-noir",
+      "vendor": "Erzana Homme",
+      "type": "Chaussures",
+      "tags": ["chaussures-confort", "haute_gamme"],
+      "price": 799,
+      "compare_at_price": 999,
+      "collection": "Chaussures Confort+",
+      "description": "Chaussure de confort premium en cuir noir souple, conçue pour offrir un confort optimal toute la journée. Semelle intérieure ergonomique et matériaux respirants. Parfaite pour les longues journées, alliant confort exceptionnel et style élégant. Un investissement dans votre bien-être.",
+      "variants": [
+        {"size": 40, "color": "Noir"},
+        {"size": 41, "color": "Noir"},
+        {"size": 42, "color": "Noir"},
+        {"size": 43, "color": "Noir"},
+        {"size": 44, "color": "Noir"}
+      ],
+      "image": "https://via.placeholder.com/1200x1500/231f20/ffffff?text=Chaussure+Confort+Noir"
+    },
+    {
+      "title": "Mocassin Élégance Suprême – Noir",
+      "handle": "mocassin-elegance-supreme-noir",
+      "vendor": "Erzana Homme",
+      "type": "Chaussures",
+      "tags": ["mocassins", "haute_gamme"],
+      "price": 699,
+      "compare_at_price": 899,
+      "collection": "Mocassins",
+      "description": "Mocassin premium en cuir noir souple, confectionné avec un savoir-faire artisanal exceptionnel. Design élégant et intemporel, parfait pour un style raffiné et sophistiqué. Semelle souple en cuir pour un confort optimal. Un classique revisité avec une touche moderne pour l'homme exigeant.",
+      "variants": [
+        {"size": 40, "color": "Noir"},
+        {"size": 41, "color": "Noir"},
+        {"size": 42, "color": "Noir"},
+        {"size": 43, "color": "Noir"},
+        {"size": 44, "color": "Noir"}
+      ],
+      "image": "https://via.placeholder.com/1200x1500/231f20/ffffff?text=Mocassin+Elegance+Noir"
+    },
+    {
+      "title": "Sabot Traditionnel Luxe Homme – Noir",
+      "handle": "sabot-traditionnel-luxe-homme-noir",
+      "vendor": "Erzana Homme",
+      "type": "Chaussures",
+      "tags": ["sabots-babouches", "tendance"],
+      "price": 599,
+      "compare_at_price": 799,
+      "collection": "Sabots & Babouches",
+      "description": "Sabot traditionnel revisité en cuir noir premium, alliant authenticité et modernité. Design épuré et confortable, parfait pour un style décontracté élégant. Confortable et durable, idéal pour les journées décontractées. Matériaux de qualité supérieure pour une longévité exceptionnelle.",
+      "variants": [
+        {"size": 40, "color": "Noir"},
+        {"size": 41, "color": "Noir"},
+        {"size": 42, "color": "Noir"},
+        {"size": 43, "color": "Noir"},
+        {"size": 44, "color": "Noir"}
+      ],
+      "image": "https://via.placeholder.com/1200x1500/231f20/ffffff?text=Sabot+Traditionnel+Noir"
+    },
+    {
+      "title": "Chaussure Classique Heritage – Noir",
+      "handle": "chaussure-classique-heritage-noir",
+      "vendor": "Erzana Homme",
+      "type": "Chaussures",
+      "tags": ["chaussures-classiques", "haute_gamme"],
+      "price": 899,
+      "compare_at_price": 1099,
+      "collection": "Chaussures Classiques",
+      "description": "Chaussure classique en cuir noir premium, inspirée des modèles traditionnels de la maroquinerie de luxe. Design intemporel et élégant, parfaite pour toutes les occasions. Finitions impeccables et confort exceptionnel. Un investissement dans l'élégance intemporelle pour l'homme moderne.",
+      "variants": [
+        {"size": 40, "color": "Noir"},
+        {"size": 41, "color": "Noir"},
+        {"size": 42, "color": "Noir"},
+        {"size": 43, "color": "Noir"},
+        {"size": 44, "color": "Noir"}
+      ],
+      "image": "https://via.placeholder.com/1200x1500/231f20/ffffff?text=Chaussure+Classique+Noir"
+    },
+    {
+      "title": "Portefeuille Cuir Luxe Minimaliste – Noir",
+      "handle": "portefeuille-cuir-luxe-minimaliste-noir",
+      "vendor": "Erzana Homme",
+      "type": "Portefeuille",
+      "tags": ["portefeuille", "haute_gamme", "nouveaute"],
+      "price": 399,
+      "compare_at_price": 599,
+      "collection": "Portefeuille",
+      "description": "Portefeuille en cuir véritable noir, design minimaliste et élégant. Compartiments multiples pour cartes et billets, fermeture élégante. Finitions soignées et matériaux premium. Parfait pour l'homme moderne qui apprécie l'élégance discrète et la qualité supérieure. Un accessoire essentiel au style raffiné.",
+      "variants": [],
+      "image": "https://via.placeholder.com/1200x1500/231f20/ffffff?text=Portefeuille+Luxe+Noir"
+    },
+    {
+      "title": "Portefeuille Cuir Luxe Minimaliste – Blanc",
+      "handle": "portefeuille-cuir-luxe-minimaliste-blanc",
+      "vendor": "Erzana Homme",
+      "type": "Portefeuille",
+      "tags": ["portefeuille", "tendance"],
+      "price": 399,
+      "compare_at_price": 599,
+      "collection": "Portefeuille",
+      "description": "Portefeuille en cuir véritable blanc, design minimaliste et élégant. Compartiments multiples pour cartes et billets, fermeture élégante. Finitions soignées et matériaux premium. Parfait pour l'homme moderne qui apprécie l'élégance discrète et la qualité supérieure. Un accessoire essentiel au style raffiné.",
+      "variants": [],
+      "image": "https://via.placeholder.com/1200x1500/ffffff/231f20?text=Portefeuille+Luxe+Blanc"
+    },
+    {
+      "title": "Sandale Homme Premium – Noir",
+      "handle": "sandale-homme-premium-noir",
+      "vendor": "Erzana Homme",
+      "type": "Chaussures",
+      "tags": ["sandales-homme", "tendance"],
+      "price": 499,
+      "compare_at_price": 699,
+      "collection": "Sandales Homme",
+      "description": "Sandale élégante en cuir noir premium, parfaite pour les beaux jours. Design moderne et confortable, semelle souple pour un port agréable. Idéale pour un style décontracté sophistiqué, alliant confort et élégance. Matériaux de qualité pour une durabilité optimale.",
+      "variants": [
+        {"size": 40, "color": "Noir"},
+        {"size": 41, "color": "Noir"},
+        {"size": 42, "color": "Noir"},
+        {"size": 43, "color": "Noir"},
+        {"size": 44, "color": "Noir"}
+      ],
+      "image": "https://via.placeholder.com/1200x1500/231f20/ffffff?text=Sandale+Premium+Noir"
+    }
+  ],
+  "summary": {
+    "total_products": 13,
+    "total_variants": 65,
+    "collections": {
+      "Bottes & Bottines": 2,
+      "Chaussures de Ville": 2,
+      "Baskets & Espadrilles": 2,
+      "Chaussures Confort+": 1,
+      "Mocassins": 1,
+      "Sabots & Babouches": 1,
+      "Chaussures Classiques": 1,
+      "Portefeuille": 2,
+      "Sandales Homme": 1
+    },
+    "tags": {
+      "nouveaute": 3,
+      "tendance": 6,
+      "haute_gamme": 8
+    },
+    "price_range": {
+      "min": 399,
+      "max": 899,
+      "average": 650
+    }
+  }
+}
+
