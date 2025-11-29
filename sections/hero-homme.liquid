@@ -1,0 +1,144 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .hero-homme {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--brand-light);
+    {%- if section.settings.image != blank -%}
+      background-image: url('{{ section.settings.image | image_url: width: 2000 }}');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    {%- endif -%}
+  }
+  
+  .hero-homme-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: {% if section.settings.dark_overlay %}rgba(35, 31, 32, 0.5){% else %}transparent{% endif %};
+    z-index: 1;
+  }
+  
+  .hero-homme-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero-homme-title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+    color: {% if section.settings.dark_overlay %}var(--brand-light){% else %}var(--brand-dark){% endif %};
+    opacity: 0;
+    transform: translateY(10px);
+    animation: heroFadeIn 0.8s ease forwards;
+  }
+  
+  .hero-homme-button {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: heroFadeIn 0.8s ease 0.3s forwards;
+  }
+  
+  @keyframes heroFadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-homme-button .button {
+    background: var(--brand-dark);
+    color: var(--brand-light);
+    padding: 1.5rem 4rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease;
+  }
+  
+  .hero-homme-button .button:hover {
+    opacity: 0.9;
+  }
+{%- endstyle -%}
+
+<div class="hero-homme reveal">
+  <div class="hero-homme-overlay"></div>
+  <div class="hero-homme-content">
+    {%- if section.settings.title != blank -%}
+      <h1 class="hero-homme-title">{{ section.settings.title }}</h1>
+    {%- endif -%}
+    
+    {%- if section.settings.button_label != blank -%}
+      <div class="hero-homme-button">
+        <a href="{{ section.settings.button_link | default: routes.all_products_collection_url }}" class="button">
+          {{ section.settings.button_label }}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hero Homme",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Boutique Homme Premium",
+      "label": "Titre"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Boutique Homme",
+      "label": "Label du bouton"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Lien du bouton"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image de fond (optionnelle)"
+    },
+    {
+      "type": "checkbox",
+      "id": "dark_overlay",
+      "default": false,
+      "label": "Overlay sombre sur l'image",
+      "info": "Active un overlay sombre pour améliorer la lisibilité du texte"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Schéma de couleurs",
+      "default": "scheme-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Homme"
+    }
+  ]
+}
+{% endschema %}
+
