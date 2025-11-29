@@ -3654,3 +3654,490 @@ details-disclosure > details {
   opacity: 0.9;
   transition: opacity 0.3s ease;
 }
+
+/* =========================================================== */
+/* SANTIAGO STYLE - PREMIUM MINIMALIST THEME                  */
+/* =========================================================== */
+
+/* Santiago Typography */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: #231f20;
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h0, .h1, .h2, .h3, .h4, .h5 {
+  font-family: 'Playfair Display', serif;
+  color: #231f20;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* Santiago Header Styles */
+.header-wrapper {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(35, 31, 32, 0.1);
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header__menu-item {
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  text-transform: none;
+  font-weight: 400;
+}
+
+/* Santiago Hero Styles */
+.hero-santiago {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-santiago-content {
+  text-align: center;
+  max-width: 800px;
+  padding: 4rem 2rem;
+  z-index: 2;
+}
+
+.hero-santiago-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 500;
+  color: #231f20;
+  margin-bottom: 2rem;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroReveal 0.8s ease forwards;
+}
+
+.hero-santiago-subtitle {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  color: #231f20;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroReveal 0.8s ease 0.2s forwards;
+}
+
+.hero-santiago-button {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: heroReveal 0.8s ease 0.4s forwards;
+}
+
+.hero-santiago-button .button {
+  background: #231f20;
+  color: #ffffff;
+  padding: 1.5rem 4rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid #231f20;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.hero-santiago-button .button:hover {
+  background: transparent;
+  color: #231f20;
+}
+
+@keyframes heroReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Santiago Collection Grid */
+.collection-santiago-grid {
+  display: grid;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.collection-santiago-item {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid rgba(35, 31, 32, 0.1);
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.collection-santiago-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+.collection-santiago-item:hover::before {
+  opacity: 1;
+}
+
+.collection-santiago-item:hover {
+  transform: scale(1.04);
+  border-color: #231f20;
+  box-shadow: 0 8px 24px rgba(35, 31, 32, 0.12);
+}
+
+.collection-santiago-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.collection-santiago-item:hover img {
+  transform: scale(1.05);
+}
+
+.collection-santiago-item h3 {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #231f20;
+  margin: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .collection-santiago-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .collection-santiago-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .collection-santiago-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Santiago Product Card */
+.product-card-santiago {
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.product-card-santiago .card__media {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+
+.product-card-santiago .card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card-santiago:hover .card__media img {
+  transform: scale(1.08);
+}
+
+.product-card-santiago:hover {
+  box-shadow: 0 12px 32px rgba(35, 31, 32, 0.15);
+}
+
+.product-card-santiago .card__heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #231f20;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
+.product-card-santiago .price {
+  color: #231f20;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+/* Santiago Badge Luxe */
+.badge-luxe {
+  background: #231f20;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+}
+
+/* Santiago Benefits Section */
+.benefits-santiago {
+  background: #ffffff;
+  padding: 6rem 0;
+}
+
+.benefits-santiago-grid {
+  display: grid;
+  gap: 4rem;
+  text-align: center;
+}
+
+.benefits-santiago-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.benefits-santiago-icon {
+  width: 48px;
+  height: 48px;
+  color: #231f20;
+  margin-bottom: 1rem;
+}
+
+.benefits-santiago-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: #231f20;
+  margin: 0;
+  font-weight: 500;
+}
+
+.benefits-santiago-item p {
+  font-size: 1.4rem;
+  color: #231f20;
+  margin: 0;
+  opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+  .benefits-santiago-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .benefits-santiago-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .benefits-santiago-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Santiago Footer */
+.footer-santiago {
+  background: #231f20;
+  color: #ffffff;
+  padding: 6rem 0 3rem;
+}
+
+.footer-santiago a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.footer-santiago a:hover {
+  opacity: 0.7;
+}
+
+.footer-santiago-grid {
+  display: grid;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.footer-santiago-block h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.footer-santiago-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-santiago-block ul li {
+  margin-bottom: 1rem;
+}
+
+.footer-santiago-block ul li a {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-santiago-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .footer-santiago-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .footer-santiago-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Santiago Product Page */
+.product-santiago-layout {
+  display: grid;
+  gap: 6rem;
+  margin-top: 4rem;
+}
+
+.product-santiago-gallery {
+  position: relative;
+}
+
+.product-santiago-info h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  color: #231f20;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.product-santiago-price {
+  font-size: 2.4rem;
+  color: #231f20;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.product-santiago-button {
+  width: 100%;
+  background: #231f20;
+  color: #ffffff;
+  padding: 1.8rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.product-santiago-button:hover {
+  background: rgba(35, 31, 32, 0.9);
+}
+
+@media (max-width: 768px) {
+  .product-santiago-layout {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .product-santiago-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Santiago Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Santiago Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Santiago Buttons */
+.button-santiago {
+  background: #231f20;
+  color: #ffffff;
+  padding: 1.5rem 3rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid #231f20;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.button-santiago:hover {
+  background: transparent;
+  color: #231f20;
+}
+
+@media (max-width: 768px) {
+  .button-santiago {
+    width: 100%;
+    text-align: center;
+  }
+}

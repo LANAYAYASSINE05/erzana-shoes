@@ -1,0 +1,101 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="benefits-santiago section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="benefits-santiago-grid">
+      <div class="benefits-santiago-item reveal">
+        <div class="benefits-santiago-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#231f20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </div>
+        <h3>Livraison Offerte</h3>
+        <p>À partir de 100€ d'achat</p>
+      </div>
+      
+      <div class="benefits-santiago-item reveal">
+        <div class="benefits-santiago-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#231f20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <h3>Qualité Luxe</h3>
+        <p>Matières premium sélectionnées</p>
+      </div>
+      
+      <div class="benefits-santiago-item reveal">
+        <div class="benefits-santiago-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#231f20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 4v6h6M23 20v-6h-6M20 4l-7 7M4 20l7-7"/>
+          </svg>
+        </div>
+        <h3>Retour Simple</h3>
+        <p>30 jours pour changer d'avis</p>
+      </div>
+      
+      <div class="benefits-santiago-item reveal">
+        <div class="benefits-santiago-icon">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#231f20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <h3>Support Rapide</h3>
+        <p>Réponse sous 24h</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Avantages Santiago",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Espacement"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Espacement haut",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Espacement bas",
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "Avantages Santiago"
+    }
+  ]
+}
+{% endschema %}
+

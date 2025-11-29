@@ -40,10 +40,10 @@
       assign ratio = 1
     endif
   -%}
-  <div class="card-wrapper product-card-wrapper underline-links-hover">
+  <div class="card-wrapper product-card-wrapper product-card-santiago underline-links-hover">
     <div
       class="
-        card card--{{ settings.card_style }}
+        card product-card-santiago card--{{ settings.card_style }}
         {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
         {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
         {% if image_shape and image_shape != 'default' %} card--shape{% endif %}
@@ -126,7 +126,7 @@
           </div>
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.tags contains 'haute_gamme' -%}
-              <span class="badge-luxe">👑 Haute Gamme</span>
+              <span class="badge-luxe" style="background: #231f20; color: #ffffff; padding: 4px 10px; border-radius: 4px; font-size: 11px; display: inline-block; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; position: absolute; top: 1rem; left: 1rem; z-index: 10;">👑 Haute Gamme</span>
             {%- endif -%}
             {%- if card_product.available == false -%}
               <span

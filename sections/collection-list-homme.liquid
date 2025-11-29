@@ -14,44 +14,92 @@
     }
   }
   
-  /* Premium Minimalist Theme - Collection Homme Styles */
+  /* Santiago Style - Collection Grid */
   .collection-homme-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-  }
-  
-  @media screen and (min-width: 990px) {
-    .collection-homme-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    gap: 3rem;
+    margin-top: 4rem;
   }
   
   .collection-homme-item {
-    background: var(--brand-light);
-    border: 1px solid transparent;
-    padding: 2rem;
-    text-align: center;
-    transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid rgba(35, 31, 32, 0.1);
+    transition: all 0.4s ease;
     cursor: pointer;
   }
   
+  .collection-homme-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 1;
+  }
+  
+  .collection-homme-item:hover::before {
+    opacity: 1;
+  }
+  
   .collection-homme-item:hover {
-    transform: scale(1.05);
-    border-color: var(--brand-dark);
-    box-shadow: 0 4px 12px rgba(35, 31, 32, 0.15);
+    transform: scale(1.04);
+    border-color: #231f20;
+    box-shadow: 0 8px 24px rgba(35, 31, 32, 0.12);
   }
   
   .collection-homme-item a {
     text-decoration: none;
-    color: var(--brand-dark);
+    color: #231f20;
+    display: block;
+  }
+  
+  .collection-homme-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  
+  .collection-homme-item:hover img {
+    transform: scale(1.05);
   }
   
   .collection-homme-item h3 {
-    margin-top: 1rem;
-    font-size: 1.6rem;
-    letter-spacing: 0.1rem;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #231f20;
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 480px) {
+    .collection-homme-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .collection-homme-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .collection-homme-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 {%- endstyle -%}
 
@@ -65,7 +113,7 @@
       </div>
     {%- endunless -%}
 
-    <div class="collection-homme-grid">
+    <div class="collection-homme-grid collection-santiago-grid">
       {%- liquid
         assign collections_list = 'bottes-bottines,chaussures-de-ville,baskets-espadrilles,chaussures-confort,mocassins,sabots-babouches,chaussures-classiques,portefeuille,sandales-homme' | split: ','
       -%}

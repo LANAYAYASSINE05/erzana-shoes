@@ -3,12 +3,12 @@
 {%- style -%}
   .hero-homme {
     width: 100%;
-    min-height: 60vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: var(--brand-light);
+    background-color: #ffffff;
     {%- if section.settings.image != blank -%}
       background-image: url('{{ section.settings.image | image_url: width: 2000 }}');
       background-size: cover;
@@ -23,7 +23,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: {% if section.settings.dark_overlay %}rgba(35, 31, 32, 0.5){% else %}transparent{% endif %};
+    background-color: {% if section.settings.dark_overlay %}rgba(35, 31, 32, 0.3){% else %}transparent{% endif %};
     z-index: 1;
   }
   
@@ -32,28 +32,40 @@
     z-index: 2;
     text-align: center;
     padding: 4rem 2rem;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
   }
   
   .hero-homme-title {
-    font-size: clamp(3rem, 8vw, 6rem);
-    font-weight: 300;
-    letter-spacing: 0.1rem;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 500;
+    letter-spacing: 0.02em;
     margin-bottom: 2rem;
-    color: {% if section.settings.dark_overlay %}var(--brand-light){% else %}var(--brand-dark){% endif %};
+    color: {% if section.settings.dark_overlay %}#ffffff{% else %}#231f20{% endif %};
     opacity: 0;
-    transform: translateY(10px);
-    animation: heroFadeIn 0.8s ease forwards;
+    transform: translateY(20px);
+    animation: heroReveal 0.8s ease forwards;
+  }
+  
+  .hero-homme-subtitle {
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    color: {% if section.settings.dark_overlay %}#ffffff{% else %}#231f20{% endif %};
+    margin-bottom: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroReveal 0.8s ease 0.2s forwards;
   }
   
   .hero-homme-button {
     opacity: 0;
-    transform: translateY(10px);
-    animation: heroFadeIn 0.8s ease 0.3s forwards;
+    transform: translateY(20px);
+    animation: heroReveal 0.8s ease 0.4s forwards;
   }
   
-  @keyframes heroFadeIn {
+  @keyframes heroReveal {
     to {
       opacity: 1;
       transform: translateY(0);
@@ -61,30 +73,50 @@
   }
   
   .hero-homme-button .button {
-    background: var(--brand-dark);
-    color: var(--brand-light);
+    background: #231f20;
+    color: #ffffff;
     padding: 1.5rem 4rem;
     font-size: 1.4rem;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    transition: opacity 0.3s ease;
+    border: 1px solid #231f20;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
   }
   
   .hero-homme-button .button:hover {
-    opacity: 0.9;
+    background: transparent;
+    color: {% if section.settings.dark_overlay %}#ffffff{% else %}#231f20{% endif %};
+    border-color: {% if section.settings.dark_overlay %}#ffffff{% else %}#231f20{% endif %};
+  }
+  
+  @media (max-width: 768px) {
+    .hero-homme {
+      min-height: 60vh;
+    }
+    
+    .hero-homme-content {
+      padding: 3rem 1.5rem;
+    }
   }
 {%- endstyle -%}
 
-<div class="hero-homme reveal">
+<div class="hero-homme hero-santiago reveal">
   <div class="hero-homme-overlay"></div>
-  <div class="hero-homme-content">
+  <div class="hero-homme-content hero-santiago-content">
     {%- if section.settings.title != blank -%}
-      <h1 class="hero-homme-title">{{ section.settings.title }}</h1>
+      <h1 class="hero-homme-title hero-santiago-title">{{ section.settings.title }}</h1>
+    {%- endif -%}
+    
+    {%- if section.settings.subtitle != blank -%}
+      <p class="hero-homme-subtitle hero-santiago-subtitle">{{ section.settings.subtitle }}</p>
     {%- endif -%}
     
     {%- if section.settings.button_label != blank -%}
-      <div class="hero-homme-button">
-        <a href="{{ section.settings.button_link | default: routes.all_products_collection_url }}" class="button">
+      <div class="hero-homme-button hero-santiago-button">
+        <a href="{{ section.settings.button_link | default: routes.all_products_collection_url }}" class="button button-santiago">
           {{ section.settings.button_label }}
         </a>
       </div>
@@ -106,8 +138,14 @@
     },
     {
       "type": "text",
+      "id": "subtitle",
+      "default": "Chaussures Premium pour Homme",
+      "label": "Sous-titre"
+    },
+    {
+      "type": "text",
       "id": "button_label",
-      "default": "Boutique Homme",
+      "default": "Découvrir",
       "label": "Label du bouton"
     },
     {
